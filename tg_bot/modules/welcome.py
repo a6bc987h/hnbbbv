@@ -86,14 +86,14 @@ def del_joined(bot: Bot, update: Update, args: List[str]) -> str:
     if not args:
         del_pref = sql.get_del_pref(chat.id)
         if del_pref:
-            update.effective_message.reply_text("I should be deleting `user` joined the chat messages now.")
+            update.effective_message.reply_text("നിലവിൽ user joined the chat മെസ്സേജുകൾ ഡിലീറ്റ് ചെയ്യുന്നുണ്ട്.")
         else:
-            update.effective_message.reply_text("I'm currently not deleting old joined messages!")
+            update.effective_message.reply_text("നിലവിൽ user joined the chat മെസ്സേജുകൾ ഡിലീറ്റ് ചെയ്യുന്നില്ല.")
         return ""
 
     if args[0].lower() in ("on", "yes"):
         sql.set_del_joined(str(chat.id), True)
-        update.effective_message.reply_text("I'll try to delete old joined messages!")
+        update.effective_message.reply_text("ശരി, user joined the chat മെസ്സേജുകൾ ഡിലീറ്റ് ചെയ്യാൻ ശ്രമിക്കാം!")
         return "<b>{}:</b>" \
                "\n#CLEAN_SERVICE_MESSAGE" \
                "\n<b>Admin:</b> {}" \
@@ -101,7 +101,7 @@ def del_joined(bot: Bot, update: Update, args: List[str]) -> str:
                                                                          mention_html(user.id, user.first_name))
     elif args[0].lower() in ("off", "no"):
         sql.set_del_joined(str(chat.id), False)
-        update.effective_message.reply_text("I won't delete old joined messages.")
+        update.effective_message.reply_text("ശരി, പഴയ user joined the chat മെസ്സേജുകൾ ഡിലീറ്റ് ചെയ്യുന്നില്ല!")
         return "<b>{}:</b>" \
                "\n#CLEAN_SERVICE_MESSAGE" \
                "\n<b>Admin:</b> {}" \
@@ -109,7 +109,7 @@ def del_joined(bot: Bot, update: Update, args: List[str]) -> str:
                                                                           mention_html(user.id, user.first_name))
     else:
         # idek what you're writing, say yes or no
-        update.effective_message.reply_text("I understand 'on/yes' or 'off/no' only!")
+        update.effective_message.reply_text("എന്താണ് ചെയ്യേണ്ടത് എന്നു മനസ്സിലായില്ല... 'on/yes' അല്ലെങ്കിൽ 'off/no' എന്നു ചേർത്ത് അയക്കൂ.")
         return ""
 
 
@@ -133,7 +133,7 @@ def new_member(bot: Bot, update: Update):
         for new_mem in new_members:
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
-                update.effective_message.reply_text("Master is in the houseeee, let's get this party started!")
+                update.effective_message.reply_text("ഹായ്... മാസ്റ്റർ വന്നല്ലോ ഗ്രൂപ്പിൽ!")
                 continue
 
             # Don't welcome yourself
@@ -201,7 +201,7 @@ def left_member(bot: Bot, update: Update):
 
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
-                update.effective_message.reply_text("RIP Master")
+                update.effective_message.reply_text("Bye... മാസ്റ്റർ.")
                 return
 
             # if media goodbye, use appropriate function for it
@@ -249,7 +249,7 @@ def welcome(bot: Bot, update: Update, args: List[str]):
         noformat = args and args[0].lower() == "noformat"
         pref, welcome_m, welcome_type = sql.get_welc_pref(chat.id)
         update.effective_message.reply_text(
-            "This chat has it's welcome setting set to: `{}`.\n*The welcome message "
+            "ഈ ചാറ്റിലെ welcome message ന്റെ status: `{}`.\n*The welcome message "
             "(not filling the {{}}) is:*".format(pref),
             parse_mode=ParseMode.MARKDOWN)
 
@@ -275,15 +275,15 @@ def welcome(bot: Bot, update: Update, args: List[str]):
     elif len(args) >= 1:
         if args[0].lower() in ("on", "yes"):
             sql.set_welc_preference(str(chat.id), True)
-            update.effective_message.reply_text("I'll be polite!")
+            update.effective_message.reply_text("ശരി, പുതിയ members നെ സ്വാഗതം ചെയ്യാം!")
 
         elif args[0].lower() in ("off", "no"):
             sql.set_welc_preference(str(chat.id), False)
-            update.effective_message.reply_text("I'm sulking, not saying hello anymore.")
+            update.effective_message.reply_text("ശരി, ഇനി ആരെയും സ്വാഗതം ചെയ്യുന്നില്ല!")
 
         else:
             # idek what you're writing, say yes or no
-            update.effective_message.reply_text("I understand 'on/yes' or 'off/no' only!")
+            update.effective_message.reply_text("എന്താണ് ചെയ്യേണ്ടത് എന്നു മനസ്സിലായില്ല... 'on/yes' അല്ലെങ്കിൽ 'off/no' എന്നു ചേർത്ത് അയക്കൂ.")
 
 
 @run_async
@@ -295,7 +295,7 @@ def goodbye(bot: Bot, update: Update, args: List[str]):
         noformat = args and args[0] == "noformat"
         pref, goodbye_m, goodbye_type = sql.get_gdbye_pref(chat.id)
         update.effective_message.reply_text(
-            "This chat has it's goodbye setting set to: `{}`.\n*The goodbye  message "
+            "ഈ ചാറ്റിലെ goodbye മെസ്സേജിന്റെ status: `{}`.\n*The goodbye  message "
             "(not filling the {{}}) is:*".format(pref),
             parse_mode=ParseMode.MARKDOWN)
 
@@ -321,11 +321,11 @@ def goodbye(bot: Bot, update: Update, args: List[str]):
     elif len(args) >= 1:
         if args[0].lower() in ("on", "yes"):
             sql.set_gdbye_preference(str(chat.id), True)
-            update.effective_message.reply_text("I'll be sorry when people leave!")
+            update.effective_message.reply_text("ശരി, ഗ്രൂപ്പിൽ നിന്നു പോകുന്നവരോട് goodbye പറയാം!")
 
         elif args[0].lower() in ("off", "no"):
             sql.set_gdbye_preference(str(chat.id), False)
-            update.effective_message.reply_text("They leave, they're dead to me.")
+            update.effective_message.reply_text("ശരി, ആരോടും goodbye പറയുന്നില്ല!")
 
         else:
             # idek what you're writing, say yes or no
@@ -347,7 +347,7 @@ def set_welcome(bot: Bot, update: Update) -> str:
         return ""
 
     sql.set_custom_welcome(chat.id, content or text, data_type, buttons)
-    msg.reply_text("Successfully set custom welcome message!")
+    msg.reply_text("Welcome message സെറ്റ് ചെയ്തിട്ടുണ്ട്!")
 
     return "<b>{}:</b>" \
            "\n#SET_WELCOME" \
@@ -385,7 +385,7 @@ def set_goodbye(bot: Bot, update: Update) -> str:
         return ""
 
     sql.set_custom_gdbye(chat.id, content or text, data_type, buttons)
-    msg.reply_text("Successfully set custom goodbye message!")
+    msg.reply_text("Goodbye message സെറ്റ് ചെയ്തിട്ടുണ്ട്!")
     return "<b>{}:</b>" \
            "\n#SET_GOODBYE" \
            "\n<b>Admin:</b> {}" \
@@ -418,14 +418,14 @@ def clean_welcome(bot: Bot, update: Update, args: List[str]) -> str:
     if not args:
         clean_pref = sql.get_clean_pref(chat.id)
         if clean_pref:
-            update.effective_message.reply_text("I should be deleting welcome messages up to two days old.")
+            update.effective_message.reply_text("നിലവിൽ പഴയ welcome മെസ്സേജുകൾ ഡിലീറ്റ് ചെയ്യുന്നുണ്ട്.")
         else:
-            update.effective_message.reply_text("I'm currently not deleting old welcome messages!")
+            update.effective_message.reply_text("നിലവിൽ പഴയ welcome മെസ്സേജുകൾ ഡിലീറ്റ് ചെയ്യുന്നില്ല.")
         return ""
 
     if args[0].lower() in ("on", "yes"):
         sql.set_clean_welcome(str(chat.id), True)
-        update.effective_message.reply_text("I'll try to delete old welcome messages!")
+        update.effective_message.reply_text("ശരി, പഴയ welcome മെസ്സേജുകൾ ഡിലീറ്റ് ചെയ്യാൻ ശ്രമിക്കാം!")
         return "<b>{}:</b>" \
                "\n#CLEAN_WELCOME" \
                "\n<b>Admin:</b> {}" \
@@ -433,7 +433,7 @@ def clean_welcome(bot: Bot, update: Update, args: List[str]) -> str:
                                                                          mention_html(user.id, user.first_name))
     elif args[0].lower() in ("off", "no"):
         sql.set_clean_welcome(str(chat.id), False)
-        update.effective_message.reply_text("I won't delete old welcome messages.")
+        update.effective_message.reply_text("ശരി, പഴയ welcome മെസ്സേജുകൾ ഡിലീറ്റ് ചെയ്യുന്നില്ല!")
         return "<b>{}:</b>" \
                "\n#CLEAN_WELCOME" \
                "\n<b>Admin:</b> {}" \
