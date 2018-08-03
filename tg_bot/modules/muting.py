@@ -82,7 +82,7 @@ def unmute(bot: Bot, update: Update, args: List[str]) -> str:
                                      can_send_media_messages=True,
                                      can_send_other_messages=True,
                                      can_add_web_page_previews=True)
-            message.reply_text("ശരി, മ്യൂട്ട് മാറ്റിയിട്ടുണ്ട്")
+            message.reply_text("ശരി, മ്യൂട്ട് മാറ്റിയിട്ടുണ്ട്!")
             return "<b>{}:</b>" \
                    "\n#UNMUTE" \
                    "\n<b>Admin:</b> {}" \
