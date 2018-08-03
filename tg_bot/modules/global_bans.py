@@ -91,7 +91,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
 
         return
 
-    message.reply_text("*Blows dust off of banhammer* 😉")
+    message.reply_text("ഇപ്പ ശരിയാക്കിത്തരാം! 😉")
 
     banner = update.effective_user  # type: Optional[User]
     send_to_list(bot, SUDO_USERS + SUPPORT_USERS,
@@ -123,8 +123,8 @@ def gban(bot: Bot, update: Update, args: List[str]):
         except TelegramError:
             pass
 
-    send_to_list(bot, SUDO_USERS + SUPPORT_USERS, "gban complete!")
-    message.reply_text("Person has been gbanned.")
+    send_to_list(bot, SUDO_USERS + SUPPORT_USERS, "ലവനെ GBAN ചെയ്തിട്ടുണ്ട്!")
+    message.reply_text("Get out of the house of my wife and daughter, you will not see any minute of the today... ഇറങ്ങിപ്പോടാ!")
 
 
 @run_async
