@@ -66,7 +66,7 @@ def warn(user: User, chat: Chat, reason: str, message: Message, warner: User = N
         keyboard = InlineKeyboardMarkup(
             [[InlineKeyboardButton("Remove warn", callback_data="rm_warn({})".format(user.id))]])
 
-        reply = "{} <b>has been WARNED!</b> {}/{}".format(mention_html(user.id, user.first_name), num_warns,
+        reply = "{} <b>has been WARNED!</b> Count: {}/{}".format(mention_html(user.id, user.first_name), num_warns,
                                                              limit)
         if reason:
             reply += "\nReason for last warn:\n{}".format(html.escape(reason))
@@ -166,7 +166,7 @@ def reset_warns(bot: Bot, update: Update, args: List[str]) -> str:
                                           mention_html(user.id, user.first_name),
                                           mention_html(warned.id, warned.first_name))
     else:
-        message.reply_text("ആരെയാണ് എന്നു പറഞ്ഞില്ലല്ലോ?")
+        message.reply_text("ആരുടെ warnings ആണ് reset ചെയ്യേണ്ടത് എന്നു പറഞ്ഞില്ലല്ലോ?")
     return ""
 
 
@@ -191,7 +191,7 @@ def warns(bot: Bot, update: Update, args: List[str]):
                 update.effective_message.reply_text(msg)
         else:
             update.effective_message.reply_text(
-                "ഇയാൾക്ക് {}/{} warnings ഉണ്ട്, പക്ഷേ കാരണം ലഭ്യമല്ല.".format(num_warns, limit))
+                "ഇയാൾക്ക് {}/{} warnings ഉണ്ട്, കാരണം ലഭ്യമല്ല.".format(num_warns, limit))
     else:
         update.effective_message.reply_text("ഇയാൾക്ക് warnings ഒന്നും കിട്ടിയിട്ടില്ല!")
 
