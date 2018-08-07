@@ -158,7 +158,7 @@ def temp_mute(bot: Bot, update: Update, args: List[str]) -> str:
     try:
         if member.can_send_messages is None or member.can_send_messages:
             bot.restrict_chat_member(chat.id, user_id, until_date=mutetime, can_send_messages=False)
-            message.reply_text("ലവന്റെ വായടച്ചിട്ടുണ്ട്! Muted for {}!".format(time_val))
+            message.reply_text("ലവന്റെ വായടച്ചിട്ടുണ്ട്! \n Muted for {}!".format(time_val))
             return log
         else:
             message.reply_text("ഇയാളെ already മ്യൂട്ട് ചെയ്തിട്ടുണ്ട്!")
@@ -166,7 +166,7 @@ def temp_mute(bot: Bot, update: Update, args: List[str]) -> str:
     except BadRequest as excp:
         if excp.message == "Reply message not found":
             # Do not reply
-            message.reply_text("ലവന്റെ വായടച്ചിട്ടുണ്ട്! Muted for {}!".format(time_val), quote=False)
+            message.reply_text("ലവന്റെ വായടച്ചിട്ടുണ്ട്! \n Muted for {}!".format(time_val), quote=False)
             return log
         else:
             LOGGER.warning(update)
