@@ -1,6 +1,5 @@
-
 {
-  "name": "Marie",
+  "name": "TONY",
   "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
   "keywords": [
     "telegram",
@@ -9,10 +8,10 @@
     "manager",
     "3"
   ],
-  "repository": "https://github.com/PaulSonOfLars/tgbot",
+  "provider": "https://t.me/TonyJr_online",
   "env": {
     "ENV": {
-      "description": "Setting this to ANYTHING will enable env variables",
+      "description": "Setting this to ANYTHING will enable env variables. But, you need to understand the code to know what to set here!",
       "value": "ANYTHING"
     },
     "TOKEN": {
@@ -21,11 +20,11 @@
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": "340489014"
+      "value": "598659520"
     },
     "OWNER_USERNAME": {
       "description": "Your username",
-      "value": "Deonnn"
+      "value": "Sivintony"
     },
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode messages",
@@ -33,27 +32,28 @@
     },
     "URL": {
       "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/",
-      "value": "https://your_appname_here.herokuapp.com/"
+      "value": ""
     },
     "MESSAGE_DUMP": {
       "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
-      "value": "-1007777777777"
+      "value": "",
+      "required": false
     },
     "SUDO_USERS": {
       "description": "A space separated list of user_ids which should be considered sudo users",
-      "value": "340489014 338618587 323478201"
+      "value": "598659520 340489014 type_your_userid"
     },
     "SUPPORT_USERS": {
       "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
-      "value": "340489014 338618587 323478201"
+      "value": "598659520 340489014 type_your_userid"
     },
     "WHITELIST_USERS": {
       "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
-      "value": "340489014 338618587 323478201"
+      "value": "598659520 340489014 type_your_userid"
     },
     "DONATION_LINK": {
       "description": "Optional: link where you would like to receive donations.",
-      "value": "https://www.paypal.me/Your_id_here"
+      "value": "https://t.me/TonyJr_online"
     },
     "PORT": {
       "description": "Port to use for your webhooks",
@@ -73,7 +73,8 @@
     },
     "BAN_STICKER": {
       "description": "Which sticker to use when banning people. Use https://telegram.dog/ShowJsonBot to get the file_id",
-      "value": "CAADBQADNwEAAjZzSxRZAc49mnFSSAI"
+      "value": "CAADBQADHQADwNGuI93oS14MKMzrAg",
+      "required": false
     }
   },
   "addons": [
