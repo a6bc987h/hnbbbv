@@ -19,13 +19,11 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-ഹായ് {}, എന്റെ പേര് {}! ഞാൻ [ഇദ്ദേഹം](tg://user?id={}) നോക്കി നടത്തുന്ന ഒരു അടിപൊളി അഡ്മിൻ ബോട്ടാണ്.
-
-എന്നെ നിർമ്മിച്ചിരിക്കുന്നത് python3 യിൽ python-telegram-bot ലൈബ്രറി ഉപയോഗിച്ചാണ്. ഞാൻ പൂർണ്ണമായിട്ടും ഓപ്പൺസോഴ്സ്ഡ് ആണ്. എന്റെ കോഡ് നിങ്ങൾക്ക് [ഇവിടെ](https://t.me/deonnn) ലഭിക്കും.
-
-അതെ, @Deonnn ആണ് എന്റെ മാസ്റ്റർ!
-
-ലഭ്യമായ കമാന്റുകളെപ്പറ്റി അറിയുവാൻ /help അമർത്തുക.
+ഹായ് {}, എന്റെ പേര് {}! 
+എന്നെ നോക്കി നടത്തുന്നത്  [ഇദ്ദേഹം](tg://user?id={}) ആണ് ...എന്നെ നിർമ്മിച്ചിരിക്കുന്നത് python3 യിൽ python-telegram-bot ലൈബ്രറി ഉപയോഗിച്ചാണ്. ഞാൻ പൂർണ്ണമായിട്ടും ഓപ്പൺസോഴ്സ്ഡ് ആണ്.
+എന്റെ കോഡ് നിങ്ങൾക്ക് [ഇവിടെ](https://github.com/sivintony/tgmalayalambot) ലഭിക്കും.. എന്റെ യഥാർത്ഥ രൂപവും എന്റെ അപ്ഡേറ്റ് വിവരങ്ങളും നിങ്ങൾക് [ഇവിടെ](https://t.me/TonyJr_online) കാണാൻ സാധിക്കും..
+എന്നെ ഉപയോഗിക്കേണ്ടത് എങ്ങനെ ആണെന്നുള്ളതിൽ എന്തേലും സംശയം ഉണ്ടെങ്കിൽ /help കൊടുത്താൽ മതിയാകും...
+സംശയങ്ങൾക്ക് @TGCommunityCorner എന്ന ഗ്രൂപ്പിൽ വരാവുന്നതാണ്..ടെലിഗ്രാമിനെകുറിച്ചുള്ള നിങ്ങളുടെ എന്ത് സംശയങ്ങൾക്കും [BUJI](https://t.me/buji_bot)-യെ ഉപയോഗിക്കാവുന്നതാണ്.....
 
 
 """
@@ -46,11 +44,10 @@ the things I can help you with.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/SonOfLars) to get me to where I am now, and every donation helps \
-motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
-(see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = """നമസ്കാരം, നിങ്ങൾ സംഭാവന ചെയ്യാൻ പോകുന്നു എന്ന് കേൾക്കുന്നതിൽ അതിയായ സന്തോഷം ഉണ്ട്!
+[എന്റെ മൊതലാളി](t.me/sivintony) വളരെ കഷ്ടപ്പെട്ടാണ് എന്നെ നിർമിച്ചിരിക്കുന്നത്... നിങ്ങൾ തരുന്ന ഓരോ സംഭാവനയും എന്നെ കൂടുതൽ നന്നാക്കുന്നതിൽ പ്രെചോദനം ആകും 
+
+എനിക്ക് സംഭാവന നൽകാൻ [ഇദ്ദേഹം](http://t.me/TonyJr_online) ആയി  ബന്ധപ്പെടുക.... നന്ദി"""
 
 IMPORTED = {}
 MIGRATEABLE = []
