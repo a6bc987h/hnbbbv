@@ -41,19 +41,19 @@
     },
     "SUDO_USERS": {
       "description": "A space separated list of user_ids which should be considered sudo users",
-      "value": "598659520 340489014 type_your_userid"
+      "value": "598659520"
     },
     "SUPPORT_USERS": {
       "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
-      "value": "598659520 340489014 type_your_userid"
+      "value": "598659520"
     },
     "WHITELIST_USERS": {
       "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
-      "value": "598659520 340489014 type_your_userid"
+      "value": "598659520"
     },
     "DONATION_LINK": {
       "description": "Optional: link where you would like to receive donations.",
-      "value": "https://t.me/TonyJr_online"
+      "value": "https://t.me/Tonyjrbot"
     },
     "PORT": {
       "description": "Port to use for your webhooks",
