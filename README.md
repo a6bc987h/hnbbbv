@@ -6,16 +6,13 @@ simple to use.
 
 Can be found on telegram as [TONY](https://t.me/tonyjunior_bot) .
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sivintony/tgmalayalambot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sivintony/tgbotmalayalam)
 
-Tony and I are moderating a [support group](https://t.me/TGCommunityCorner), where you can ask for help setting up your
-bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available. Of course
-I'll also help when a database schema changes, and some table column needs to be modified/added. Note to maintainers that all schema changes will be found in the commit messages, and its their responsibility to read any new commits.
 
 Join the our [Offical  channel](https://t.me/TonyJr_online) if you just want to stay in the loop about new features or
 announcements.
 
-Alternatively, [find me on telegram](https://t.me/Sivintony)! (Keep all support questions in the support chat, where more people can help you.)
+Alternatively, [find me on telegram](https://t.me/Tonyjrbot)! (Keep all support questions in the support chat, where more people can help you.)
 
 ## Starting the bot.
 
@@ -40,22 +37,7 @@ your other settings.
 It is recommended to import sample_config and extend the Config class, as this will ensure your config contains all 
 defaults set in the sample_config, hence making it easier to upgrade.
 
-An example `config.py` file could be:
-```
-from tg_bot.sample_config import Config
 
-
-class Development(Config):
-    OWNER_ID = 598659520  # my telegram ID
-    OWNER_USERNAME = "Sivintony"  # my telegram username
-    API_KEY = "your bot api key"  # my api key, as provided by the botfather
-    SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
-    MESSAGE_DUMP = '-1234567890' # some group chat that your bot is a member of
-    USE_MESSAGE_DUMP = True
-    SUDO_USERS = [340489014, 12345]  # List of id's for users which have sudo access to the bot.
-    LOAD = []
-    NO_LOAD = ['translation']
-```
 
 If you can't have a config.py file (EG on heroku), it is also possible to use environment variables.
 The following env variables are supported:
