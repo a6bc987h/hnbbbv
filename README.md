@@ -6,7 +6,7 @@ simple to use.
 
 Can be found on telegram as [TONY](https://t.me/tonyjunior_bot) .
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sivintony/tgbotmalayalam)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TonyJronline/tgbot)
 
 
 Join the our [Offical  channel](https://t.me/TonyJr_online) if you just want to stay in the loop about new features or
