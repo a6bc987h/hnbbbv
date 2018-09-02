@@ -35,8 +35,8 @@ def check_flood(bot: Bot, update: Update) -> str:
 
     try:
         chat.kick_member(user.id)
-        msg.reply_text("ഫ്ലഡ് ചെയ്യുന്നോ... നിങ്ങൾക്കായി ഒരു കണ്ടം ഒരുക്കിയിട്ടുണ്ട്...  "
-                       "ഒന്ന് ഓടിയിട്ട് വരൂ...")
+        msg.reply_text("I like to leave the flooding to natural disasters. But you, you were just a "
+                       "disappointment. Get out.")
 
         return "<b>{}:</b>" \
                "\n#BANNED" \
@@ -122,7 +122,6 @@ def __chat_settings__(chat_id, user_id):
 
 __help__ = """
  - /flood: Get the current flood control setting
-
 *Admin only:*
  - /setflood <int/'no'/'off'>: enables or disables flood control
 """

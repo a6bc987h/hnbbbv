@@ -91,7 +91,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
 
         return
 
-    message.reply_text("ഇപ്പ ശരിയാക്കിത്തരാം! 😉")
+    message.reply_text("*Blows dust off of banhammer* 😉")
 
     banner = update.effective_user  # type: Optional[User]
     send_to_list(bot, SUDO_USERS + SUPPORT_USERS,
@@ -123,8 +123,8 @@ def gban(bot: Bot, update: Update, args: List[str]):
         except TelegramError:
             pass
 
-    send_to_list(bot, SUDO_USERS + SUPPORT_USERS, "Gban ചെയ്തു!")
-    message.reply_text("Get out of my world, you idiot! ലവനെ GBAN ചെയ്തിട്ടുണ്ട് മാസ്റ്റർ.")
+    send_to_list(bot, SUDO_USERS + SUPPORT_USERS, "gban complete!")
+    message.reply_text("Person has been gbanned.")
 
 
 @run_async
@@ -147,7 +147,7 @@ def ungban(bot: Bot, update: Update, args: List[str]):
 
     banner = update.effective_user  # type: Optional[User]
 
-    message.reply_text("ശരി, {} ന് ഒരു അവസരം കൂടി കൊടുത്തേക്കാം!".format(user_chat.first_name))
+    message.reply_text("I'll give {} a second chance, globally.".format(user_chat.first_name))
 
     send_to_list(bot, SUDO_USERS + SUPPORT_USERS,
                  "{} has ungbanned user {}".format(mention_html(banner.id, banner.first_name),
@@ -179,9 +179,9 @@ def ungban(bot: Bot, update: Update, args: List[str]):
 
     sql.ungban_user(user_id)
 
-    send_to_list(bot, SUDO_USERS + SUPPORT_USERS, "un-gban ചെയ്തു!")
+    send_to_list(bot, SUDO_USERS + SUPPORT_USERS, "un-gban complete!")
 
-    message.reply_text("ഇയാളുടെ Gban പിൻവലിച്ചിട്ടുണ്ട്!")
+    message.reply_text("Person has been un-gbanned.")
 
 
 @run_async
@@ -283,7 +283,6 @@ def __chat_settings__(chat_id, user_id):
 __help__ = """
 *Admin only:*
  - /gbanstat <on/off/yes/no>: Will disable the effect of global bans on your group, or return your current settings.
-
 Gbans, also known as global bans, are used by the bot owners to ban spammers across all groups. This helps protect \
 you and your groups by removing spam flooders as quickly as possible. They can be disabled for you group by calling \
 /gbanstat
