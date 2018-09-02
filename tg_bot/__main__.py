@@ -19,15 +19,16 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-ഹായ് {}, 
-എന്റെ പേര് {}!  ഞാൻ ടെലിഗ്രാമിലെ ഒരു കിടിലൻ  ഗ്രൂപ്പ് മാനേജിങ് ബോട്ട് ആണ്.
-✪ ✪ ✪ ᴀ sɪᴍᴘʟᴇ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴɪsᴛʀᴀᴛɪᴏɴ ʙᴏᴛ ғᴏʀ ᴍᴀʟʟᴜs✪ ✪ ✪
-എന്നെ നോക്കി നടത്തുന്നത്  [ഇദ്ദേഹം](tg://user?id={}) ആണ് .എന്നെ നിർമിച്ചിരിക്കുന്നത് python3 യിൽ python-telegram-bot library ഉപയോഗിച്ചാണ്..ഞാൻ പൂർണമായും opensource ആണ്.. എന്റെ കോഡ് നിങ്ങൾക്ക് [ഇവിടെ](https://github.com/TonyJronline/tgbot) കാണാവുന്നതാണ്...
+Hai {}, 
+My name is {}! 
+✪ ✪ ✪ ᴀ sɪᴍᴘʟᴇ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴɪsᴛʀᴀᴛɪᴏɴ ʙᴏᴛ ғᴏʀ telegram ✪ ✪ ✪
+I'm a group manager bot maintained by [this wonderful person](tg://user?id={}). I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick \
+[here](https://github.com/TonyJronline/tgbotenglish) ...
+You can find the list of available commands with /help...
 
-എന്നെ ഉപയോഗിക്കേണ്ടത് എങ്ങനെ ആണെന്നുള്ളതിൽ എന്തേലും സംശയം ഉണ്ടെങ്കിൽ /help കൊടുത്താൽ മതിയാകും....
-ടെലിഗ്രാമിനെകുറിച്ചുള്ള നിങ്ങളുടെ എന്ത് സംശയങ്ങൾക്കും [BUJI](https://t.me/buji_bot)-യെ ഉപയോഗിക്കാവുന്നതാണ്...
-അതെ [ഇദ്ദേഹം](https://t.me/TonyJr_online) തന്നെയാണ് എന്റെ മാസ്റ്റർ!! 
-നിങ്ങൾക്കും എന്നെ പോലെ ഒരു കിടിലൻ ബോട്ട് ഉണ്ടാകാനുള്ള വിദ്യ [ഇവിടെ](https://t.me/TonyJr_online) ലഭിക്കും..
+For all your doubts about telegram use [BUJI](https://t.me/buji_bot) ..
+yes [He](https://t.me/TonyJr_online) is my MASTER!! 
+If you want to create a bot like me, Look  [Here](https://t.me/TonyJr_online)കും..
 
 
 
@@ -50,10 +51,10 @@ the things I can help you with.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-DONATE_STRING = """നമസ്കാരം, നിങ്ങൾ സംഭാവന ചെയ്യാൻ പോകുന്നു എന്ന് കേൾക്കുന്നതിൽ അതിയായ സന്തോഷം ഉണ്ട്!
-[എന്റെ മൊതലാളി](https://t.me/TonyJr_online) വളരെ കഷ്ടപ്പെട്ടാണ് എന്നെ നിർമിച്ചിരിക്കുന്നത്... നിങ്ങൾ തരുന്ന ഓരോ സംഭാവനയും എന്നെ കൂടുതൽ നന്നാക്കുന്നതിൽ പ്രെചോദനം ആകും 
-
-എനിക്ക് സംഭാവന നൽകാൻ [ഇദ്ദേഹം](http://t.me/TonyJrbot) ആയി  ബന്ധപ്പെടുക.... നന്ദി"""
+DONATE_STRING = """Heya, glad to hear you want to donate!
+It took lots of work for [my creator](t.me/tonyjr_online) to get me to where I am now, and every donation helps \
+motivate him to make me even better. 
+Contact [him](http://t.me/TonyJrbot) for donate me .... Thank you"""
 
 IMPORTED = {}
 MIGRATEABLE = []
