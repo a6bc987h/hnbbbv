@@ -21,40 +21,49 @@ PM_START_TEXT = """
 
 Hai {}, 
 My name is {}! 
-✪ ✪ ✪ ᴀ sɪᴍᴘʟᴇ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴɪsᴛʀᴀᴛɪᴏɴ ʙᴏᴛ ғᴏʀ telegram ✪ ✪ ✪
-I'm a group manager bot maintained by [this wonderful person](tg://user?id={}). I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick \
-[here](https://github.com/TonyJronline/tgbotenglish) ...
-You can find the list of available commands with /help...
+I'm a group manager bot maintained by [this wonderful person](tg://user?id={}).
+I'm built in python3, using the python-telegram-bot library, and am fully opensource you can find what makes me tick [here](https://github.com/PaulSonOfLars/tgbot)!
 
-For all your doubts about telegram use [BUJI](https://t.me/buji_bot) ..
-yes [He](https://t.me/TonyJr_online) is my MASTER!! 
-If you want to create a bot like me, Look  [Here](https://t.me/TonyJr_online)കും..
+You can find the list of available commands with /help.
+
+For all your doubts about telegram use @TG_Helpbot ..
 
 
+Using standard [Marie](http://telegram.dog/BanhammerMarie_bot) is always gonna be easier.
+Perks:
+- latest features
+- it's free
+- biggest list of users for any /info commands
+- the database will always be correctly formatted
+- bugs will always be fixed ASAP
+- no need to maintain anything yourself
+
+Also, no support can be given for any [clones](https://t.me/kurumbibot); source might be changed and that's not [my problem](https://telegram.dog/PaulSonOfLars).
+Keep in mind that any changes you DO do to the source have to be on github, as per the license.
+
+If you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
 
 
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
-the things I can help you with.
-*Main* commands available:
- - /start: start the bot
- - /help: PM's you this message.
- - /help <module name>: PM's you info about that module.
- - /donate: information about how to donate!
- - /settings:
-   - in PM: will send you your settings for all supported modules.
-   - in a group: will redirect you to pm, with all that chat's settings.
-{}
-And the following:
+ I am a group management bot, here to help you get around and keep the order in your groups!
+I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
+
+A few handy commands are:
+ - /start: starts me! You've probably already used this.
+ - /help: gets this message out; I'll tell you more about myself!
+ - /donate: gives you info on how to support me and my creator.
+
+If you have any bugs or questions on how to use me, head to @TonyJr_Online .
+:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/tonyjr_online) to get me to where I am now, and every donation helps \
+It took lots of work for [my creator](t.me/sonoflars) to get me to where I am now, and every donation helps \
 motivate him to make me even better. 
-Contact [him](http://t.me/TonyJrbot) for donate me .... Thank you"""
+Contact [him](http://t.me/sonoflars) for donate me .... Thank you"""
 
 IMPORTED = {}
 MIGRATEABLE = []
