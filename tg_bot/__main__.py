@@ -45,14 +45,21 @@ Keep in mind that any changes you DO do to the source have to be on github, as p
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
- I am a group management bot, here to help you get around and keep the order in your groups!
-I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
+I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of the things I can help you with.
 
-A few handy commands are:
- - /start: starts me! You've probably already used this.
- - /help: gets this message out; I'll tell you more about myself!
- - /donate: gives you info on how to support me and my creator.
+Main commands available:
+ - /start: start the bot
+ - /help: PM's you this message.
+ - /help <module name>: PM's you info about that module.
+ - /donate: information about how to donate!
+ - /settings:
+   - in PM: will send you your settings for all supported modules.
+   - in a group: will redirect you to pm, with all that chat's settings.
 
+
+All commands can either be used with / or !.
+
+And the following:
 If you have any bugs or questions on how to use me, head to @TonyJr_Online .
 :
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
