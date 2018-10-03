@@ -41,9 +41,6 @@ Perks:
 Also, no support can be given for any [clones](https://t.me/kurumbibot); source might be changed and that's not [my problem](https://telegram.dog/PaulSonOfLars).
 Keep in mind that any changes you DO do to the source have to be on github, as per the license.
 
-If you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
-
-
 """
 
 HELP_STRINGS = """
