@@ -29,7 +29,6 @@ You can find the list of available commands with /help.
 For all your doubts about telegram use @TG_Helpbot ..
 
 Using standard [Marie](http://telegram.dog/BanhammerMarie_bot) is always gonna be easier.
-If you have any bugs or questions on how to use me, head to @TonyJr_Online .
 
 """
 
@@ -48,6 +47,8 @@ Main commands available:
 
 
 All commands can either be used with / or !.
+
+If you have any bugs or questions on how to use me, head to @TonyJr_Online .
 
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
