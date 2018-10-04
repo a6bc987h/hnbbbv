@@ -25,7 +25,9 @@ I'm a group manager bot maintained by [this noob](tg://user?id={}).
 I'm built in python3, using the python-telegram-bot library, and am fully opensource you can find what makes me tick [here](https://github.com/PaulSonOfLars/tgbot)!
 You can find the list of available commands with /help.
 For all your doubts about telegram use [TG_Helpbot](https://t.me/tg_helpbot) ..
+Using standard [Marie](http://t.me/BanhammerMarie_bot) is always gonna be easier.
 You can see my updates [here](https://t.me/TonyJr_Online).
+
 [Click here to add my clones in your groups](https://telegram.me/tonyjr_bot?startgroup=add)
 """
 
@@ -42,8 +44,6 @@ Main commands available:
    - in PM: will send you your settings for all supported modules.
    - in a group: will redirect you to pm, with all that chat's settings.
 
-
-Using standard [Marie](http://t.me/BanhammerMarie_bot) is always gonna be easier.
 
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
