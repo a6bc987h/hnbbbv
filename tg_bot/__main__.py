@@ -28,18 +28,8 @@ You can find the list of available commands with /help.
 
 For all your doubts about telegram use @TG_Helpbot ..
 
-
 Using standard [Marie](http://telegram.dog/BanhammerMarie_bot) is always gonna be easier.
-Perks:
-- latest features
-- it's free
-- biggest list of users for any /info commands
-- the database will always be correctly formatted
-- bugs will always be fixed ASAP
-- no need to maintain anything yourself
-
-Also, no support can be given for any [clones](https://t.me/kurumbibot); source might be changed and that's not [my problem](https://telegram.dog/PaulSonOfLars).
-Keep in mind that any changes you DO do to the source have to be on github, as per the license.
+If you have any bugs or questions on how to use me, head to @TonyJr_Online .
 
 """
 
@@ -60,8 +50,6 @@ Main commands available:
 All commands can either be used with / or !.
 
 And the following:
-If you have any bugs or questions on how to use me, head to @TonyJr_Online .
-:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
