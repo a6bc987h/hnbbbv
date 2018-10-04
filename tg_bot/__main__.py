@@ -21,11 +21,12 @@ PM_START_TEXT = """
 
 Hai {}, 
 My name is {}! 
-I'm a group manager bot maintained by [this wonderful person](tg://user?id={}).
+I'm a group manager bot maintained by [this noob](tg://user?id={}).
 I'm built in python3, using the python-telegram-bot library, and am fully opensource you can find what makes me tick [here](https://github.com/PaulSonOfLars/tgbot)!
 You can find the list of available commands with /help.
-For all your doubts about telegram use @TG_Helpbot ..
-If you have any bugs or questions on how to use me, head to @TonyJr_Online .
+For all your doubts about telegram use [TG_Helpbot](https://t.me/tg_helpbot) ..
+You can see my updates [here](https://t.me/TonyJr_Online).
+[Click here to add my clones in your groups](https://telegram.me/tonyjr_bot?startgroup=add)
 """
 
 HELP_STRINGS = """
