@@ -24,11 +24,8 @@ My name is {}!
 I'm a group manager bot maintained by [this wonderful person](tg://user?id={}).
 I'm built in python3, using the python-telegram-bot library, and am fully opensource you can find what makes me tick [here](https://github.com/PaulSonOfLars/tgbot)!
 You can find the list of available commands with /help.
-
 For all your doubts about telegram use @TG_Helpbot ..
-
-Using standard [Marie](http://telegram.dog/BanhammerMarie_bot) is always gonna be easier.
-
+If you have any bugs or questions on how to use me, head to @TonyJr_Online .
 """
 
 HELP_STRINGS = """
@@ -45,9 +42,7 @@ Main commands available:
    - in a group: will redirect you to pm, with all that chat's settings.
 
 
-All commands can either be used with / or !.
-
-If you have any bugs or questions on how to use me, head to @TonyJr_Online .
+Using standard [Marie](http://t.me/BanhammerMarie_bot) is always gonna be easier.
 
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
