@@ -19,8 +19,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-Hai {}, 
-My name is {}! 
+Hey there, 
 This bot username is changed to [TG_Helpbot](t.me/Tg_helpbot) .
 
 This bot was created and maintained by [T✪NY](t.me/tonyJr_online).
